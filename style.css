@@ -4,70 +4,6 @@
  
 }
 
-nav {
-    background-color: #303030;
-    display: inline-flex;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    padding: 3px;
-    margin: 0;
-}
-
-#imglo0 {
-    display: block;
-    height: 30px;
-    margin-left: 7%;
-}
-
-#headsec {
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-
-}
-
-#imglo1 {
-
-}
-
-#imgpr {
-    width: 140px; 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 7%;
-}
-
-ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 2;
-    overflow: hidden;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-li {
-    display: inline;
-    float: left;
-    text-align: center;
-}
-
-li a {
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#l {
-    position: absolute;
-    right: 7%;
-}
-
 html {
     margin: 0;
     height: 100%;
@@ -78,7 +14,53 @@ body {
     margin: 0;
     height: 100%;
     font-family:"OpenSans";
-    display:block;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #303030;
+    display: inline-flex;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding: 3px;
+    margin: 0;
+}
+
+nav > img {
+    display: block;
+    height: 30px;
+    margin-left: 7%;
+}
+
+nav > ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 2;
+    overflow: hidden;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav > ul > li {
+    display: inline;
+    float: left;
+    text-align: center;
+}
+
+nav > ul > li > a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav > ul > #l {
+    position: absolute;
+    right: 7%;
 }
 
 header {
@@ -88,10 +70,28 @@ header {
     padding: 20px;
 }
 
-#p {
-    background-color: blueviolet;
-    width: 100%;
-    margin: 0;
+header > img {
+    width: 140px; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+
 }
+
+header > section {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+header > section > img {
+    width: 50px;
+
+}
+header > section > p {
+    text-align: center;
+}
+
 
 
