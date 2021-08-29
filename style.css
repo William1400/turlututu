@@ -4,94 +4,211 @@
  
 }
 
-html {
+/*selectionne tout le contenu*/
+* {                 
     margin: 0;
-    height: 100%;
-
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    height: 100%;
-    font-family:"OpenSans";
     display: flex;
     flex-direction: column;
+    font-family:"OpenSans";
+    min-height: 100vh; /*hauteur min = toute la hauteur disponible*/
 }
 
+/*------------------------NAV------------------------*/
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 25px;
+
     background-color: #303030;
-    display: inline-flex;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    padding: 3px;
-    margin: 0;
-}
+    padding: 1rem 0;
+}   
 
 nav > img {
-    display: block;
-    height: 30px;
-    margin-left: 7%;
+    height: 2em;
+    margin-left: 100px;
 }
 
-nav > ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 2;
-    overflow: hidden;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-nav > ul > li {
-    display: inline;
-    float: left;
-    text-align: center;
-}
-
-nav > ul > li > a {
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+nav > a {
     text-decoration: none;
+    color: white;
 }
 
-nav > ul > #l {
-    position: absolute;
-    right: 7%;
+nav > a:last-child {
+    margin-left: auto;
+    margin-right: 8rem;
 }
-
+/*------------------------HEADER------------------------*/  
 header {
+    display: flex;
     background-color: #0496CA;
-    position:relative;
-    margin: 0;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 
 header > img {
     width: 140px; 
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     left: 7%;
-
 }
 
 header > section {
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 header > section > img {
-    width: 50px;
-
+    width: 120px;
+   
+    
 }
 header > section > p {
-    text-align: center;
+    color: whitesmoke;
+      
 }
+
+header > section > button {
+    background-color: #E7942E; 
+    border: 2px solid #ffffff;
+    font-size: 1.3em;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+    
+}
+
+/*------------------------MAIN------------------------*/  
+#sec-a {
+    display: flex;
+    justify-content: center; 
+    
+    font-size: 1.5em;
+    
+    padding: 10px 0px;
+}
+
+#sec-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+    
+    background-color: #0496CA;
+
+    padding: 50px 120px;
+    
+}
+
+#sec-b > aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 25px;
+  
+    color: white;  
+}
+
+#sec-b > aside > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 7px;
+  
+}
+
+#sec-c { 
+    display: flex;
+    justify-content: center; 
+    
+    font-size: 1.3em;
+    
+    color: #787a78;
+    padding: 10px 0px;
+}
+
+#sec-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background-color: #EEEFEF;
+    padding: 50px;
+}
+
+#sec-d > article {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 65px;
+}
+
+#sec-e {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 50px;
+
+}
+
+#sec-e > .blue {
+    background-color: #005981; 
+}
+
+#sec-e > button {
+    background-color: #E7942E; 
+   
+    font-size: 1.3em;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 180px;
+
+}
+
+/*------------------------FOOTER------------------------*/  
+footer {
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 25px;
+
+    margin-top: auto;
+    background-color: #303030;
+    padding: 1rem 0;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+footer > a:last-child {
+    margin-left: auto;
+    margin-right: 4rem;
+}
+
+    
+
+
+
 
 
 
